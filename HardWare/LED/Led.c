@@ -1,7 +1,4 @@
-//Ó²¼þÇý¶¯
 #include "Led.h"
-#include "Delay.h"
-
 //C¿â
 #include <string.h>
 #include <stdio.h>
@@ -18,24 +15,24 @@
 	 GPIO_Init(GPIOE,&GPIO_Initstructure);
 	 GPIO_Initstructure.GPIO_Pin = GPIO_Pin_5;
 	  GPIO_Init(GPIOB,&GPIO_Initstructure);
+	
 	 GPIO_SetBits (GPIOE,GPIO_Pin_5 );
 	 GPIO_SetBits (GPIOB,GPIO_Pin_5 );
  }
  
- 
- void LED1_ON(void)
+ void LED0_ON(void)
  {
 	 GPIO_SetBits(GPIOB,GPIO_Pin_5); 
  }
  
 
- void LED1_OFF(void)
+ void LED0_OFF(void)
  {
     GPIO_ResetBits(GPIOB,GPIO_Pin_5);
  }
  
 
- void LED1_Turn(void)
+ void LED0_Turn(void)
  {
 	 if(GPIO_ReadOutputDataBit(GPIOB,GPIO_Pin_5) == 0)
 	 {
@@ -48,17 +45,17 @@
  }
  
 
- void LED2_ON(void)
+ void LED1_ON(void)
  {
 	 GPIO_SetBits(GPIOE,GPIO_Pin_5); 
  }
  
- void LED2_OFF(void)
+ void LED1_OFF(void)
  {
     GPIO_ResetBits(GPIOE,GPIO_Pin_5);
  }
  
-  void LED2_Turn(void)
+  void LED1_Turn(void)
  {
 	 if(GPIO_ReadOutputDataBit(GPIOE,GPIO_Pin_5) == 0)
 	 {

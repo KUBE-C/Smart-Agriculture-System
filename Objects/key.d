@@ -1,4 +1,7 @@
 .\objects\key.o: HardWare\Key\Key.c
+.\objects\key.o: F:\MDK5.36\ARM\ARMCC\Bin\..\include\string.h
+.\objects\key.o: HardWare\Key\Key.h
+.\objects\key.o: F:\MDK5.36\ARM\ARMCC\Bin\..\include\stdbool.h
 .\objects\key.o: .\Start\stm32f10x.h
 .\objects\key.o: .\Start\core_cm3.h
 .\objects\key.o: F:\MDK5.36\ARM\ARMCC\Bin\..\include\stdint.h
@@ -29,8 +32,3 @@
 .\objects\key.o: .\Library\stm32f10x_wwdg.h
 .\objects\key.o: .\Library\misc.h
 .\objects\key.o: .\System\Delay.h
-.\objects\key.o: F:\MDK5.36\ARM\ARMCC\Bin\..\include\string.h
-.\objects\key.o: HardWare\Key\Key.h
-.\objects\key.o: F:\MDK5.36\ARM\ARMCC\Bin\..\include\stdbool.h
-.\objects\key.o: .\HardWare\Timer\Timer.h
-.\objects\key.o: .\HardWare\usart.h

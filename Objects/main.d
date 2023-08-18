@@ -30,9 +30,11 @@
 .\objects\main.o: .\Library\misc.h
 .\objects\main.o: .\System\Delay.h
 .\objects\main.o: .\HardWare\Timer\Timer.h
-.\objects\main.o: .\HardWare\Key\key.h
+.\objects\main.o: .\HardWare\Key\Key.h
 .\objects\main.o: F:\MDK5.36\ARM\ARMCC\Bin\..\include\stdbool.h
 .\objects\main.o: .\HardWare\usart.h
 .\objects\main.o: .\HardWare\DHT11\DHT11.h
+.\objects\main.o: .\HardWare\BEEP\Beep.h
+.\objects\main.o: .\HardWare\LED\Led.h
 .\objects\main.o: F:\MDK5.36\ARM\ARMCC\Bin\..\include\string.h
 .\objects\main.o: F:\MDK5.36\ARM\ARMCC\Bin\..\include\stdio.h
