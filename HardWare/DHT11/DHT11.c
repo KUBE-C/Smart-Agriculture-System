@@ -36,12 +36,12 @@ uint8_t DHT_Start(void)
 	
 	GPIO_ResetBits(DHT_GPIO_PORT,DHT_GPIO_PIN);		//输出20ms低电平后拉高
 	Delay_ms(20);
-	//delay_ms(20);
+
 	GPIO_SetBits(DHT_GPIO_PORT,DHT_GPIO_PIN);
 	
 	DHT_GPIO_Init(GPIO_Mode_IN_FLOATING);					//输入模式
 	Delay_us(20);
-//	delay_us(20);
+
 	
 	if(!GPIO_ReadInputDataBit(DHT_GPIO_PORT,DHT_GPIO_PIN))
 	{

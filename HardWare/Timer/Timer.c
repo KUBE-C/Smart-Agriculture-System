@@ -1,5 +1,6 @@
 #include "Timer.h" 
 #include "Key.h" 
+#include "usart.h"
 //#include "AutoControl.h" 
 //定义时间片
 u32 timedAD[2] = {0,500};
@@ -11,7 +12,7 @@ u32 timedAuto[2] = {0,10};
 unsigned short timeCount;
 
 /**
-  * @brief  初始化TIM3定时器，定义1ms一次终端
+  * @brief  初始化TIM3定时器，定义1ms一次中断
   * @param  无
   * @retval None
   */
@@ -23,7 +24,7 @@ void Timer_Init(void)
 	TIM_TimeBaseInitTypeDef TIM_TimeBaseInitStructure;
 	TIM_TimeBaseInitStructure.TIM_ClockDivision = TIM_CKD_DIV1;
 	TIM_TimeBaseInitStructure.TIM_CounterMode = TIM_CounterMode_Up;
-	TIM_TimeBaseInitStructure.TIM_Period = 10 - 1;
+	TIM_TimeBaseInitStructure.TIM_Period = 10000 - 1;
 	TIM_TimeBaseInitStructure.TIM_Prescaler = 7200 - 1;
 	TIM_TimeBaseInitStructure.TIM_RepetitionCounter = 0;
 	TIM_TimeBaseInit(TIM3,&TIM_TimeBaseInitStructure);
@@ -66,17 +67,18 @@ void TIM3_IRQHandler(void)
 {
 	if(TIM_GetITStatus(TIM3,TIM_IT_Update) == SET)
 	{
-		timedAD[0]++;
-		timeDht11[0]++;
-		timed8266[0]++;
-		timeCount ++;
-		timedSuB8266[0]++;
-		timedAuto[0]++;
-		if(timedAuto[0]> timedAuto[1])
-		{		
-			//Control_Execute();
-			timedAuto[0] = 0;
-		}
+//		timedAD[0]++;
+//		timeDht11[0]++;
+//		timed8266[0]++;
+//		timeCount ++;
+//		timedSuB8266[0]++;
+//		timedAuto[0]++;
+//		if(timedAuto[0]> timedAuto[1])
+//		{		
+			//Control_Execute(); 判断阈值以及操作
+			//timedAuto[0] = 0;
+            //UsartPrintf(USART_DEBUG, " 1s interrupt\r\n");
+		//}
 		TIM_ClearITPendingBit(TIM3,TIM_IT_Update);
 	}
 }
