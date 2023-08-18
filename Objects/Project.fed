@@ -1,0 +1,831 @@
+;#<FEEDBACK># ARM Linker, 5060528: Last Updated: Thu May 11 22:46:28 2023
+;VERSION 0.2
+;FILE ad.o
+InfraredSwitchConvert <= USED 0
+;FILE autocontrol.o
+;FILE buzzer.o
+;FILE cjson.o
+cJSON_AddItemReferenceToArray <= USED 0
+cJSON_AddItemReferenceToObject <= USED 0
+cJSON_AddItemToArray <= USED 0
+cJSON_AddItemToObject <= USED 0
+cJSON_AddItemToObjectCS <= USED 0
+cJSON_CreateArray <= USED 0
+cJSON_CreateBool <= USED 0
+cJSON_CreateDoubleArray <= USED 0
+cJSON_CreateFalse <= USED 0
+cJSON_CreateFloatArray <= USED 0
+cJSON_CreateIntArray <= USED 0
+cJSON_CreateNull <= USED 0
+cJSON_CreateNumber <= USED 0
+cJSON_CreateObject <= USED 0
+cJSON_CreateString <= USED 0
+cJSON_CreateStringArray <= USED 0
+cJSON_CreateTrue <= USED 0
+cJSON_DeleteItemFromArray <= USED 0
+cJSON_DeleteItemFromObject <= USED 0
+cJSON_DetachItemFromArray <= USED 0
+cJSON_DetachItemFromObject <= USED 0
+cJSON_Duplicate <= USED 0
+cJSON_GetArrayItem <= USED 0
+cJSON_GetArraySize <= USED 0
+cJSON_InitHooks <= USED 0
+cJSON_InsertItemInArray <= USED 0
+cJSON_Minify <= USED 0
+cJSON_ParseWithOpts <= USED 0
+cJSON_Print <= USED 0
+cJSON_PrintBuffered <= USED 0
+cJSON_PrintUnformatted <= USED 0
+cJSON_ReplaceItemInArray <= USED 0
+cJSON_ReplaceItemInObject <= USED 0
+;FILE core_cm3.o
+__REV16 <= USED 0
+__REVSH <= USED 0
+__get_MSP <= USED 0
+__get_PSP <= USED 0
+__set_MSP <= USED 0
+__set_PSP <= USED 0
+;FILE delay.o
+Delay_s <= USED 0
+;FILE dht11.o
+;FILE esp8266.o
+ESP8266_Init <= USED 0
+;FILE key.o
+;FILE led.o
+;FILE main.o
+;FILE misc.o
+NVIC_SetVectorTable <= USED 0
+NVIC_SystemLPConfig <= USED 0
+SysTick_CLKSourceConfig <= USED 0
+;FILE mqttkit.o
+MQTT_PacketCmdResp <= USED 0
+MQTT_PacketDisConnect <= USED 0
+MQTT_PacketPing <= USED 0
+MQTT_PacketPublishAck <= USED 0
+MQTT_PacketPublishRec <= USED 0
+MQTT_PacketSaveBinData <= USED 0
+MQTT_PacketSaveData <= USED 0
+MQTT_PacketUnSubscribe <= USED 0
+;FILE mui.o
+mui_Draw <= USED 0
+mui_EnterForm <= USED 0
+mui_GetCurrentCursorFocusPosition <= USED 0
+mui_GetCurrentFormId <= USED 0
+mui_GetSelectableFieldOptionCnt <= USED 0
+mui_GetSelectableFieldTextOption <= USED 0
+mui_GotoForm <= USED 0
+mui_GotoFormAutoCursorPosition <= USED 0
+mui_Init <= USED 0
+mui_LeaveForm <= USED 0
+mui_NextField <= USED 0
+mui_PrevField <= USED 0
+mui_RestoreForm <= USED 0
+mui_SaveCursorPosition <= USED 0
+mui_SaveForm <= USED 0
+mui_SendSelect <= USED 0
+mui_SendSelectWithExecuteOnSelectFieldSearch <= USED 0
+mui_SendValueDecrement <= USED 0
+mui_SendValueIncrement <= USED 0
+mui_fds_first_token <= USED 0
+mui_fds_get_nth_token <= USED 0
+mui_fds_get_token_cnt <= USED 0
+mui_fds_next_token <= USED 0
+mui_find_form <= USED 0
+mui_find_uif <= USED 0
+mui_get_fds_char <= USED 0
+mui_next_field <= USED 0
+mui_task_draw <= USED 0
+mui_task_find_execute_on_select_field <= USED 0
+mui_task_find_first_cursor_uif <= USED 0
+mui_task_find_last_cursor_uif <= USED 0
+mui_task_find_next_cursor_uif <= USED 0
+mui_task_find_prev_cursor_uif <= USED 0
+mui_task_form_end <= USED 0
+mui_task_form_start <= USED 0
+mui_task_get_current_cursor_focus_position <= USED 0
+mui_task_read_nth_selectable_field <= USED 0
+;FILE mui_u8g2.o
+mui_get_U8g2 <= USED 0
+mui_get_x <= USED 0
+mui_get_y <= USED 0
+mui_u8g2_btn_exit_wm_fi <= USED 0
+mui_u8g2_btn_goto_w1_fi <= USED 0
+mui_u8g2_btn_goto_w1_pi <= USED 0
+mui_u8g2_btn_goto_w2_fi <= USED 0
+mui_u8g2_btn_goto_w2_if <= USED 0
+mui_u8g2_btn_goto_wm_fi <= USED 0
+mui_u8g2_btn_goto_wm_if <= USED 0
+mui_u8g2_draw_button_fi <= USED 0
+mui_u8g2_draw_button_if <= USED 0
+mui_u8g2_draw_button_pf <= USED 0
+mui_u8g2_draw_button_pi <= USED 0
+mui_u8g2_draw_button_utf <= USED 0
+mui_u8g2_draw_text <= USED 0
+mui_u8g2_get_fi_flags <= USED 0
+mui_u8g2_get_if_flags <= USED 0
+mui_u8g2_get_pf_flags <= USED 0
+mui_u8g2_get_pi_flags <= USED 0
+mui_u8g2_goto_data <= USED 0
+mui_u8g2_goto_form_w1_pf <= USED 0
+mui_u8g2_goto_form_w1_pi <= USED 0
+mui_u8g2_set_font_style_function <= USED 0
+mui_u8g2_u16_list_child_w1_pi <= USED 0
+mui_u8g2_u16_list_goto_w1_pi <= USED 0
+mui_u8g2_u16_list_line_wa_mse_pi <= USED 0
+mui_u8g2_u16_list_line_wa_mud_pi <= USED 0
+mui_u8g2_u16_list_parent_wm_pi <= USED 0
+mui_u8g2_u8_bar_wm_mse_pf <= USED 0
+mui_u8g2_u8_bar_wm_mse_pi <= USED 0
+mui_u8g2_u8_bar_wm_mud_pf <= USED 0
+mui_u8g2_u8_bar_wm_mud_pi <= USED 0
+mui_u8g2_u8_char_wm_mud_pi <= USED 0
+mui_u8g2_u8_chkbox_wm_pi <= USED 0
+mui_u8g2_u8_min_max_wm_mse_pf <= USED 0
+mui_u8g2_u8_min_max_wm_mse_pi <= USED 0
+mui_u8g2_u8_min_max_wm_mud_pf <= USED 0
+mui_u8g2_u8_min_max_wm_mud_pi <= USED 0
+mui_u8g2_u8_opt_child_mse_common <= USED 0
+mui_u8g2_u8_opt_child_wm_pi <= USED 0
+mui_u8g2_u8_opt_line_wa_mse_pf <= USED 0
+mui_u8g2_u8_opt_line_wa_mse_pi <= USED 0
+mui_u8g2_u8_opt_line_wa_mud_pf <= USED 0
+mui_u8g2_u8_opt_line_wa_mud_pi <= USED 0
+mui_u8g2_u8_opt_parent_wm_pi <= USED 0
+mui_u8g2_u8_opt_radio_child_w1_pi <= USED 0
+mui_u8g2_u8_opt_radio_child_wm_pi <= USED 0
+mui_u8g2_u8_radio_wm_pi <= USED 0
+;FILE oled.o
+logo_ui_show <= USED 0
+move_icon <= USED 0
+;FILE onenet.o
+;FILE pwm.o
+;FILE relay.o
+;FILE servo.o
+;FILE sgp30.o
+;FILE sgp30i2c.o
+;FILE startup_stm32f10x_md.o
+;FILE stm32f10x_adc.o
+ADC_AnalogWatchdogCmd <= USED 0
+ADC_AnalogWatchdogSingleChannelConfig <= USED 0
+ADC_AnalogWatchdogThresholdsConfig <= USED 0
+ADC_AutoInjectedConvCmd <= USED 0
+ADC_ClearFlag <= USED 0
+ADC_ClearITPendingBit <= USED 0
+ADC_DeInit <= USED 0
+ADC_DiscModeChannelCountConfig <= USED 0
+ADC_DiscModeCmd <= USED 0
+ADC_ExternalTrigConvCmd <= USED 0
+ADC_ExternalTrigInjectedConvCmd <= USED 0
+ADC_ExternalTrigInjectedConvConfig <= USED 0
+ADC_GetConversionValue <= USED 0
+ADC_GetDualModeConversionValue <= USED 0
+ADC_GetFlagStatus <= USED 0
+ADC_GetITStatus <= USED 0
+ADC_GetInjectedConversionValue <= USED 0
+ADC_GetSoftwareStartConvStatus <= USED 0
+ADC_GetSoftwareStartInjectedConvCmdStatus <= USED 0
+ADC_ITConfig <= USED 0
+ADC_InjectedChannelConfig <= USED 0
+ADC_InjectedDiscModeCmd <= USED 0
+ADC_InjectedSequencerLengthConfig <= USED 0
+ADC_SetInjectedOffset <= USED 0
+ADC_SoftwareStartInjectedConvCmd <= USED 0
+ADC_StructInit <= USED 0
+ADC_TempSensorVrefintCmd <= USED 0
+;FILE stm32f10x_bkp.o
+BKP_ClearFlag <= USED 0
+BKP_ClearITPendingBit <= USED 0
+BKP_DeInit <= USED 0
+BKP_GetFlagStatus <= USED 0
+BKP_GetITStatus <= USED 0
+BKP_ITConfig <= USED 0
+BKP_RTCOutputConfig <= USED 0
+BKP_ReadBackupRegister <= USED 0
+BKP_SetRTCCalibrationValue <= USED 0
+BKP_TamperPinCmd <= USED 0
+BKP_TamperPinLevelConfig <= USED 0
+BKP_WriteBackupRegister <= USED 0
+;FILE stm32f10x_can.o
+CAN_CancelTransmit <= USED 0
+CAN_ClearFlag <= USED 0
+CAN_ClearITPendingBit <= USED 0
+CAN_DBGFreeze <= USED 0
+CAN_DeInit <= USED 0
+CAN_FIFORelease <= USED 0
+CAN_FilterInit <= USED 0
+CAN_GetFlagStatus <= USED 0
+CAN_GetITStatus <= USED 0
+CAN_GetLSBTransmitErrorCounter <= USED 0
+CAN_GetLastErrorCode <= USED 0
+CAN_GetReceiveErrorCounter <= USED 0
+CAN_ITConfig <= USED 0
+CAN_Init <= USED 0
+CAN_MessagePending <= USED 0
+CAN_OperatingModeRequest <= USED 0
+CAN_Receive <= USED 0
+CAN_SlaveStartBank <= USED 0
+CAN_Sleep <= USED 0
+CAN_StructInit <= USED 0
+CAN_TTComModeCmd <= USED 0
+CAN_Transmit <= USED 0
+CAN_TransmitStatus <= USED 0
+CAN_WakeUp <= USED 0
+;FILE stm32f10x_cec.o
+CEC_ClearFlag <= USED 0
+CEC_ClearITPendingBit <= USED 0
+CEC_Cmd <= USED 0
+CEC_DeInit <= USED 0
+CEC_EndOfMessageCmd <= USED 0
+CEC_GetFlagStatus <= USED 0
+CEC_GetITStatus <= USED 0
+CEC_ITConfig <= USED 0
+CEC_Init <= USED 0
+CEC_OwnAddressConfig <= USED 0
+CEC_ReceiveDataByte <= USED 0
+CEC_SendDataByte <= USED 0
+CEC_SetPrescaler <= USED 0
+CEC_StartOfMessage <= USED 0
+;FILE stm32f10x_crc.o
+CRC_CalcBlockCRC <= USED 0
+CRC_CalcCRC <= USED 0
+CRC_GetCRC <= USED 0
+CRC_GetIDRegister <= USED 0
+CRC_ResetDR <= USED 0
+CRC_SetIDRegister <= USED 0
+;FILE stm32f10x_dac.o
+DAC_Cmd <= USED 0
+DAC_DMACmd <= USED 0
+DAC_DeInit <= USED 0
+DAC_DualSoftwareTriggerCmd <= USED 0
+DAC_GetDataOutputValue <= USED 0
+DAC_Init <= USED 0
+DAC_SetChannel1Data <= USED 0
+DAC_SetChannel2Data <= USED 0
+DAC_SetDualChannelData <= USED 0
+DAC_SoftwareTriggerCmd <= USED 0
+DAC_StructInit <= USED 0
+DAC_WaveGenerationCmd <= USED 0
+;FILE stm32f10x_dbgmcu.o
+DBGMCU_Config <= USED 0
+DBGMCU_GetDEVID <= USED 0
+DBGMCU_GetREVID <= USED 0
+;FILE stm32f10x_dma.o
+DMA_ClearFlag <= USED 0
+DMA_ClearITPendingBit <= USED 0
+DMA_DeInit <= USED 0
+DMA_GetCurrDataCounter <= USED 0
+DMA_GetFlagStatus <= USED 0
+DMA_GetITStatus <= USED 0
+DMA_ITConfig <= USED 0
+DMA_SetCurrDataCounter <= USED 0
+DMA_StructInit <= USED 0
+;FILE stm32f10x_exti.o
+EXTI_ClearFlag <= USED 0
+EXTI_ClearITPendingBit <= USED 0
+EXTI_DeInit <= USED 0
+EXTI_GenerateSWInterrupt <= USED 0
+EXTI_GetFlagStatus <= USED 0
+EXTI_GetITStatus <= USED 0
+EXTI_Init <= USED 0
+EXTI_StructInit <= USED 0
+;FILE stm32f10x_flash.o
+FLASH_ClearFlag <= USED 0
+FLASH_EnableWriteProtection <= USED 0
+FLASH_EraseAllBank1Pages <= USED 0
+FLASH_EraseAllPages <= USED 0
+FLASH_EraseOptionBytes <= USED 0
+FLASH_ErasePage <= USED 0
+FLASH_GetBank1Status <= USED 0
+FLASH_GetFlagStatus <= USED 0
+FLASH_GetPrefetchBufferStatus <= USED 0
+FLASH_GetReadOutProtectionStatus <= USED 0
+FLASH_GetStatus <= USED 0
+FLASH_GetUserOptionByte <= USED 0
+FLASH_GetWriteProtectionOptionByte <= USED 0
+FLASH_HalfCycleAccessCmd <= USED 0
+FLASH_ITConfig <= USED 0
+FLASH_Lock <= USED 0
+FLASH_LockBank1 <= USED 0
+FLASH_PrefetchBufferCmd <= USED 0
+FLASH_ProgramHalfWord <= USED 0
+FLASH_ProgramOptionByteData <= USED 0
+FLASH_ProgramWord <= USED 0
+FLASH_ReadOutProtection <= USED 0
+FLASH_SetLatency <= USED 0
+FLASH_Unlock <= USED 0
+FLASH_UnlockBank1 <= USED 0
+FLASH_UserOptionByteConfig <= USED 0
+FLASH_WaitForLastBank1Operation <= USED 0
+FLASH_WaitForLastOperation <= USED 0
+;FILE stm32f10x_fsmc.o
+FSMC_ClearFlag <= USED 0
+FSMC_ClearITPendingBit <= USED 0
+FSMC_GetECC <= USED 0
+FSMC_GetFlagStatus <= USED 0
+FSMC_GetITStatus <= USED 0
+FSMC_ITConfig <= USED 0
+FSMC_NANDCmd <= USED 0
+FSMC_NANDDeInit <= USED 0
+FSMC_NANDECCCmd <= USED 0
+FSMC_NANDInit <= USED 0
+FSMC_NANDStructInit <= USED 0
+FSMC_NORSRAMCmd <= USED 0
+FSMC_NORSRAMDeInit <= USED 0
+FSMC_NORSRAMInit <= USED 0
+FSMC_NORSRAMStructInit <= USED 0
+FSMC_PCCARDCmd <= USED 0
+FSMC_PCCARDDeInit <= USED 0
+FSMC_PCCARDInit <= USED 0
+FSMC_PCCARDStructInit <= USED 0
+;FILE stm32f10x_gpio.o
+GPIO_AFIODeInit <= USED 0
+GPIO_DeInit <= USED 0
+GPIO_ETH_MediaInterfaceConfig <= USED 0
+GPIO_EXTILineConfig <= USED 0
+GPIO_EventOutputCmd <= USED 0
+GPIO_EventOutputConfig <= USED 0
+GPIO_PinLockConfig <= USED 0
+GPIO_PinRemapConfig <= USED 0
+GPIO_ReadInputData <= USED 0
+GPIO_ReadOutputData <= USED 0
+GPIO_ReadOutputDataBit <= USED 0
+GPIO_StructInit <= USED 0
+GPIO_Write <= USED 0
+;FILE stm32f10x_i2c.o
+I2C_ARPCmd <= USED 0
+I2C_AcknowledgeConfig <= USED 0
+I2C_CalculatePEC <= USED 0
+I2C_CheckEvent <= USED 0
+I2C_ClearFlag <= USED 0
+I2C_ClearITPendingBit <= USED 0
+I2C_Cmd <= USED 0
+I2C_DMACmd <= USED 0
+I2C_DMALastTransferCmd <= USED 0
+I2C_DeInit <= USED 0
+I2C_DualAddressCmd <= USED 0
+I2C_FastModeDutyCycleConfig <= USED 0
+I2C_GeneralCallCmd <= USED 0
+I2C_GenerateSTART <= USED 0
+I2C_GenerateSTOP <= USED 0
+I2C_GetFlagStatus <= USED 0
+I2C_GetITStatus <= USED 0
+I2C_GetLastEvent <= USED 0
+I2C_GetPEC <= USED 0
+I2C_ITConfig <= USED 0
+I2C_Init <= USED 0
+I2C_NACKPositionConfig <= USED 0
+I2C_OwnAddress2Config <= USED 0
+I2C_PECPositionConfig <= USED 0
+I2C_ReadRegister <= USED 0
+I2C_ReceiveData <= USED 0
+I2C_SMBusAlertConfig <= USED 0
+I2C_Send7bitAddress <= USED 0
+I2C_SendData <= USED 0
+I2C_SoftwareResetCmd <= USED 0
+I2C_StretchClockCmd <= USED 0
+I2C_StructInit <= USED 0
+I2C_TransmitPEC <= USED 0
+;FILE stm32f10x_it.o
+;FILE stm32f10x_iwdg.o
+IWDG_Enable <= USED 0
+IWDG_GetFlagStatus <= USED 0
+IWDG_ReloadCounter <= USED 0
+IWDG_SetPrescaler <= USED 0
+IWDG_SetReload <= USED 0
+IWDG_WriteAccessCmd <= USED 0
+;FILE stm32f10x_pwr.o
+PWR_BackupAccessCmd <= USED 0
+PWR_ClearFlag <= USED 0
+PWR_DeInit <= USED 0
+PWR_EnterSTANDBYMode <= USED 0
+PWR_EnterSTOPMode <= USED 0
+PWR_GetFlagStatus <= USED 0
+PWR_PVDCmd <= USED 0
+PWR_PVDLevelConfig <= USED 0
+PWR_WakeUpPinCmd <= USED 0
+;FILE stm32f10x_rcc.o
+RCC_APB1PeriphResetCmd <= USED 0
+RCC_APB2PeriphResetCmd <= USED 0
+RCC_AdjustHSICalibrationValue <= USED 0
+RCC_BackupResetCmd <= USED 0
+RCC_ClearFlag <= USED 0
+RCC_ClearITPendingBit <= USED 0
+RCC_ClockSecuritySystemCmd <= USED 0
+RCC_DeInit <= USED 0
+RCC_GetFlagStatus <= USED 0
+RCC_GetITStatus <= USED 0
+RCC_GetSYSCLKSource <= USED 0
+RCC_HCLKConfig <= USED 0
+RCC_HSEConfig <= USED 0
+RCC_HSICmd <= USED 0
+RCC_ITConfig <= USED 0
+RCC_LSEConfig <= USED 0
+RCC_LSICmd <= USED 0
+RCC_MCOConfig <= USED 0
+RCC_PCLK1Config <= USED 0
+RCC_PCLK2Config <= USED 0
+RCC_PLLCmd <= USED 0
+RCC_PLLConfig <= USED 0
+RCC_RTCCLKCmd <= USED 0
+RCC_RTCCLKConfig <= USED 0
+RCC_SYSCLKConfig <= USED 0
+RCC_USBCLKConfig <= USED 0
+RCC_WaitForHSEStartUp <= USED 0
+;FILE stm32f10x_rtc.o
+RTC_ClearFlag <= USED 0
+RTC_ClearITPendingBit <= USED 0
+RTC_EnterConfigMode <= USED 0
+RTC_ExitConfigMode <= USED 0
+RTC_GetCounter <= USED 0
+RTC_GetDivider <= USED 0
+RTC_GetFlagStatus <= USED 0
+RTC_GetITStatus <= USED 0
+RTC_ITConfig <= USED 0
+RTC_SetAlarm <= USED 0
+RTC_SetCounter <= USED 0
+RTC_SetPrescaler <= USED 0
+RTC_WaitForLastTask <= USED 0
+RTC_WaitForSynchro <= USED 0
+;FILE stm32f10x_sdio.o
+SDIO_CEATAITCmd <= USED 0
+SDIO_ClearFlag <= USED 0
+SDIO_ClearITPendingBit <= USED 0
+SDIO_ClockCmd <= USED 0
+SDIO_CmdStructInit <= USED 0
+SDIO_CommandCompletionCmd <= USED 0
+SDIO_DMACmd <= USED 0
+SDIO_DataConfig <= USED 0
+SDIO_DataStructInit <= USED 0
+SDIO_DeInit <= USED 0
+SDIO_GetCommandResponse <= USED 0
+SDIO_GetDataCounter <= USED 0
+SDIO_GetFIFOCount <= USED 0
+SDIO_GetFlagStatus <= USED 0
+SDIO_GetITStatus <= USED 0
+SDIO_GetPowerState <= USED 0
+SDIO_GetResponse <= USED 0
+SDIO_ITConfig <= USED 0
+SDIO_Init <= USED 0
+SDIO_ReadData <= USED 0
+SDIO_SendCEATACmd <= USED 0
+SDIO_SendCommand <= USED 0
+SDIO_SendSDIOSuspendCmd <= USED 0
+SDIO_SetPowerState <= USED 0
+SDIO_SetSDIOOperation <= USED 0
+SDIO_SetSDIOReadWaitMode <= USED 0
+SDIO_StartSDIOReadWait <= USED 0
+SDIO_StopSDIOReadWait <= USED 0
+SDIO_StructInit <= USED 0
+SDIO_WriteData <= USED 0
+;FILE stm32f10x_spi.o
+I2S_Cmd <= USED 0
+I2S_Init <= USED 0
+I2S_StructInit <= USED 0
+SPI_BiDirectionalLineConfig <= USED 0
+SPI_CalculateCRC <= USED 0
+SPI_Cmd <= USED 0
+SPI_DataSizeConfig <= USED 0
+SPI_GetCRC <= USED 0
+SPI_GetCRCPolynomial <= USED 0
+SPI_I2S_ClearFlag <= USED 0
+SPI_I2S_ClearITPendingBit <= USED 0
+SPI_I2S_DMACmd <= USED 0
+SPI_I2S_DeInit <= USED 0
+SPI_I2S_GetFlagStatus <= USED 0
+SPI_I2S_GetITStatus <= USED 0
+SPI_I2S_ITConfig <= USED 0
+SPI_I2S_ReceiveData <= USED 0
+SPI_I2S_SendData <= USED 0
+SPI_Init <= USED 0
+SPI_NSSInternalSoftwareConfig <= USED 0
+SPI_SSOutputCmd <= USED 0
+SPI_StructInit <= USED 0
+SPI_TransmitCRC <= USED 0
+;FILE stm32f10x_tim.o
+TIM_ARRPreloadConfig <= USED 0
+TIM_BDTRConfig <= USED 0
+TIM_BDTRStructInit <= USED 0
+TIM_CCPreloadControl <= USED 0
+TIM_CCxCmd <= USED 0
+TIM_CCxNCmd <= USED 0
+TIM_ClearOC1Ref <= USED 0
+TIM_ClearOC2Ref <= USED 0
+TIM_ClearOC3Ref <= USED 0
+TIM_ClearOC4Ref <= USED 0
+TIM_CounterModeConfig <= USED 0
+TIM_CtrlPWMOutputs <= USED 0
+TIM_DMACmd <= USED 0
+TIM_DMAConfig <= USED 0
+TIM_DeInit <= USED 0
+TIM_ETRClockMode1Config <= USED 0
+TIM_ETRClockMode2Config <= USED 0
+TIM_ETRConfig <= USED 0
+TIM_EncoderInterfaceConfig <= USED 0
+TIM_ForcedOC1Config <= USED 0
+TIM_ForcedOC2Config <= USED 0
+TIM_ForcedOC3Config <= USED 0
+TIM_ForcedOC4Config <= USED 0
+TIM_GenerateEvent <= USED 0
+TIM_GetCapture1 <= USED 0
+TIM_GetCapture2 <= USED 0
+TIM_GetCapture3 <= USED 0
+TIM_GetCapture4 <= USED 0
+TIM_GetCounter <= USED 0
+TIM_GetFlagStatus <= USED 0
+TIM_GetPrescaler <= USED 0
+TIM_ICInit <= USED 0
+TIM_ICStructInit <= USED 0
+TIM_ITRxExternalClockConfig <= USED 0
+TIM_OC1FastConfig <= USED 0
+TIM_OC1Init <= USED 0
+TIM_OC1NPolarityConfig <= USED 0
+TIM_OC1PolarityConfig <= USED 0
+TIM_OC1PreloadConfig <= USED 0
+TIM_OC2FastConfig <= USED 0
+TIM_OC2NPolarityConfig <= USED 0
+TIM_OC2PolarityConfig <= USED 0
+TIM_OC2PreloadConfig <= USED 0
+TIM_OC3FastConfig <= USED 0
+TIM_OC3Init <= USED 0
+TIM_OC3NPolarityConfig <= USED 0
+TIM_OC3PolarityConfig <= USED 0
+TIM_OC3PreloadConfig <= USED 0
+TIM_OC4FastConfig <= USED 0
+TIM_OC4Init <= USED 0
+TIM_OC4PolarityConfig <= USED 0
+TIM_OC4PreloadConfig <= USED 0
+TIM_PWMIConfig <= USED 0
+TIM_PrescalerConfig <= USED 0
+TIM_SelectCCDMA <= USED 0
+TIM_SelectCOM <= USED 0
+TIM_SelectHallSensor <= USED 0
+TIM_SelectInputTrigger <= USED 0
+TIM_SelectMasterSlaveMode <= USED 0
+TIM_SelectOCxM <= USED 0
+TIM_SelectOnePulseMode <= USED 0
+TIM_SelectOutputTrigger <= USED 0
+TIM_SelectSlaveMode <= USED 0
+TIM_SetAutoreload <= USED 0
+TIM_SetClockDivision <= USED 0
+TIM_SetCompare1 <= USED 0
+TIM_SetCompare3 <= USED 0
+TIM_SetCompare4 <= USED 0
+TIM_SetCounter <= USED 0
+TIM_SetIC1Prescaler <= USED 0
+TIM_SetIC2Prescaler <= USED 0
+TIM_SetIC3Prescaler <= USED 0
+TIM_SetIC4Prescaler <= USED 0
+TIM_TIxExternalClockConfig <= USED 0
+TIM_TimeBaseStructInit <= USED 0
+TIM_UpdateDisableConfig <= USED 0
+TIM_UpdateRequestConfig <= USED 0
+;FILE stm32f10x_usart.o
+USART_ClearITPendingBit <= USED 0
+USART_ClockInit <= USED 0
+USART_ClockStructInit <= USED 0
+USART_DMACmd <= USED 0
+USART_DeInit <= USED 0
+USART_HalfDuplexCmd <= USED 0
+USART_IrDACmd <= USED 0
+USART_IrDAConfig <= USED 0
+USART_LINBreakDetectLengthConfig <= USED 0
+USART_LINCmd <= USED 0
+USART_OneBitMethodCmd <= USED 0
+USART_OverSampling8Cmd <= USED 0
+USART_ReceiveData <= USED 0
+USART_ReceiverWakeUpCmd <= USED 0
+USART_SendBreak <= USED 0
+USART_SetAddress <= USED 0
+USART_SetGuardTime <= USED 0
+USART_SetPrescaler <= USED 0
+USART_SmartCardCmd <= USED 0
+USART_SmartCardNACKCmd <= USED 0
+USART_StructInit <= USED 0
+USART_WakeUpConfig <= USED 0
+;FILE stm32f10x_wwdg.o
+WWDG_ClearFlag <= USED 0
+WWDG_DeInit <= USED 0
+WWDG_Enable <= USED 0
+WWDG_EnableIT <= USED 0
+WWDG_GetFlagStatus <= USED 0
+WWDG_SetCounter <= USED 0
+WWDG_SetPrescaler <= USED 0
+WWDG_SetWindowValue <= USED 0
+;FILE system_stm32f10x.o
+SystemCoreClockUpdate <= USED 0
+;FILE timer.o
+;FILE u8g2_bitmap.o
+u8g2_DrawBitmap <= USED 0
+u8g2_DrawHXBM <= USED 0
+u8g2_DrawHXBMP <= USED 0
+u8g2_DrawHorizontalBitmap <= USED 0
+u8g2_DrawXBM <= USED 0
+u8g2_DrawXBMP <= USED 0
+u8g2_SetBitmapMode <= USED 0
+;FILE u8g2_box.o
+u8g2_DrawFrame <= USED 0
+u8g2_DrawRFrame <= USED 0
+;FILE u8g2_buffer.o
+u8g2_FirstPage <= USED 0
+u8g2_NextPage <= USED 0
+u8g2_SetBufferCurrTileRow <= USED 0
+u8g2_UpdateDisplay <= USED 0
+u8g2_UpdateDisplayArea <= USED 0
+u8g2_WriteBufferPBM <= USED 0
+u8g2_WriteBufferPBM2 <= USED 0
+u8g2_WriteBufferXBM <= USED 0
+u8g2_WriteBufferXBM2 <= USED 0
+;FILE u8g2_button.o
+u8g2_DrawButtonFrame <= USED 0
+u8g2_DrawButtonUTF8 <= USED 0
+;FILE u8g2_circle.o
+u8g2_DrawCircle <= USED 0
+u8g2_DrawEllipse <= USED 0
+u8g2_DrawFilledEllipse <= USED 0
+;FILE u8g2_cleardisplay.o
+u8g2_ClearDisplay <= USED 0
+;FILE u8g2_d_memory.o
+;FILE u8g2_d_setup.o
+;FILE u8g2_font.o
+u8g2_DrawExtUTF8 <= USED 0
+u8g2_DrawExtendedUTF8 <= USED 0
+u8g2_DrawGlyphX2 <= USED 0
+u8g2_DrawStrX2 <= USED 0
+u8g2_DrawUTF8 <= USED 0
+u8g2_DrawUTF8X2 <= USED 0
+u8g2_GetFontBBXHeight <= USED 0
+u8g2_GetFontBBXOffX <= USED 0
+u8g2_GetFontBBXOffY <= USED 0
+u8g2_GetFontBBXWidth <= USED 0
+u8g2_GetFontCapitalAHeight <= USED 0
+u8g2_GetFontSize <= USED 0
+u8g2_GetStrX <= USED 0
+u8g2_GetUTF8Width <= USED 0
+u8g2_IsAllValidUTF8 <= USED 0
+u8g2_IsGlyph <= USED 0
+u8g2_SetFontDirection <= USED 0
+u8g2_SetFontMode <= USED 0
+u8g2_SetFontPosBottom <= USED 0
+u8g2_SetFontPosCenter <= USED 0
+u8g2_SetFontPosTop <= USED 0
+u8g2_SetFontRefHeightAll <= USED 0
+u8g2_SetFontRefHeightExtendedText <= USED 0
+u8g2_SetFontRefHeightText <= USED 0
+u8g2_font_2x_decode_glyph <= USED 0
+u8g2_font_2x_decode_len <= USED 0
+u8g2_font_calc_vref_bottom <= USED 0
+u8g2_font_calc_vref_center <= USED 0
+u8g2_font_calc_vref_top <= USED 0
+;FILE u8g2_hvline.o
+u8g2_DrawHLine <= USED 0
+;FILE u8g2_input_value.o
+u8g2_UserInterfaceInputValue <= USED 0
+;FILE u8g2_intersection.o
+;FILE u8g2_kerning.o
+u8g2_GetKerning <= USED 0
+u8g2_GetKerningByTable <= USED 0
+;FILE u8g2_line.o
+u8g2_DrawLine <= USED 0
+;FILE u8g2_ll_hvline.o
+u8g2_ll_hvline_horizontal_right_lsb <= USED 0
+;FILE u8g2_message.o
+u8g2_UserInterfaceMessage <= USED 0
+u8g2_draw_button_line <= USED 0
+;FILE u8g2_polygon.o
+u8g2_AddPolygonXY <= USED 0
+u8g2_ClearPolygonXY <= USED 0
+u8g2_DrawPolygon <= USED 0
+u8g2_DrawTriangle <= USED 0
+;FILE u8g2_selection_list.o
+u8g2_DrawSelectionList <= USED 0
+u8g2_DrawUTF8Line <= USED 0
+u8g2_DrawUTF8Lines <= USED 0
+u8g2_UserInterfaceSelectionList <= USED 0
+;FILE u8g2_setup.o
+u8g2_SendF <= USED 0
+u8g2_SetClipWindow <= USED 0
+u8g2_SetDisplayRotation <= USED 0
+u8g2_Setup_null <= USED 0
+u8g2_draw_l90_mirrorr_r0 <= USED 0
+u8g2_draw_l90_r1 <= USED 0
+u8g2_draw_l90_r2 <= USED 0
+u8g2_draw_l90_r3 <= USED 0
+u8g2_draw_mirror_vertical_r0 <= USED 0
+u8g2_update_dimension_r1 <= USED 0
+u8g2_update_dimension_r2 <= USED 0
+u8g2_update_dimension_r3 <= USED 0
+u8g2_update_page_win_r1 <= USED 0
+u8g2_update_page_win_r2 <= USED 0
+u8g2_update_page_win_r3 <= USED 0
+;FILE u8log.o
+u8log_Init <= USED 0
+u8log_SetCallback <= USED 0
+u8log_SetLineHeightOffset <= USED 0
+u8log_SetRedrawMode <= USED 0
+u8log_WriteChar <= USED 0
+u8log_WriteDec16 <= USED 0
+u8log_WriteDec8 <= USED 0
+u8log_WriteHex16 <= USED 0
+u8log_WriteHex32 <= USED 0
+u8log_WriteHex8 <= USED 0
+u8log_WriteString <= USED 0
+u8log_write_char <= USED 0
+;FILE u8log_u8g2.o
+u8g2_DrawLog <= USED 0
+u8log_u8g2_cb <= USED 0
+;FILE u8log_u8x8.o
+u8log_u8x8_cb <= USED 0
+u8x8_DrawLog <= USED 0
+;FILE u8x8_8x8.o
+u8x8_Draw1x2Glyph <= USED 0
+u8x8_Draw1x2String <= USED 0
+u8x8_Draw1x2UTF8 <= USED 0
+u8x8_Draw2x2Glyph <= USED 0
+u8x8_Draw2x2String <= USED 0
+u8x8_Draw2x2UTF8 <= USED 0
+u8x8_DrawGlyph <= USED 0
+u8x8_DrawString <= USED 0
+u8x8_DrawUTF8 <= USED 0
+u8x8_GetUTF8Len <= USED 0
+u8x8_SetFont <= USED 0
+u8x8_upscale_byte <= USED 0
+u8x8_utf8_next <= USED 0
+;FILE u8x8_byte.o
+u8x8_byte_3wire_sw_spi <= USED 0
+u8x8_byte_4wire_sw_spi <= USED 0
+u8x8_byte_8bit_6800mode <= USED 0
+u8x8_byte_8bit_8080mode <= USED 0
+u8x8_byte_SendBytes <= USED 0
+u8x8_byte_SetDC <= USED 0
+u8x8_byte_empty <= USED 0
+u8x8_byte_ks0108 <= USED 0
+u8x8_byte_sed1520 <= USED 0
+u8x8_byte_set_ks0108_cs <= USED 0
+;FILE u8x8_cad.o
+u8x8_SendF <= USED 0
+u8x8_cad_001 <= USED 0
+u8x8_cad_011 <= USED 0
+u8x8_cad_100 <= USED 0
+u8x8_cad_110 <= USED 0
+u8x8_cad_SendMultipleArg <= USED 0
+u8x8_cad_empty <= USED 0
+u8x8_cad_ld7032_i2c <= USED 0
+u8x8_cad_ssd13xx_i2c <= USED 0
+u8x8_cad_st75256_i2c <= USED 0
+u8x8_cad_st7920_spi <= USED 0
+u8x8_cad_uc1638_i2c <= USED 0
+u8x8_cad_uc16xx_i2c <= USED 0
+u8x8_cad_vsendf <= USED 0
+u8x8_gu800_cad_110 <= USED 0
+;FILE u8x8_capture.o
+u8x8_capture_get_pixel_1 <= USED 0
+u8x8_capture_get_pixel_2 <= USED 0
+u8x8_capture_write_pbm_buffer <= USED 0
+u8x8_capture_write_pbm_pre <= USED 0
+u8x8_capture_write_xbm_buffer <= USED 0
+u8x8_capture_write_xbm_pre <= USED 0
+;FILE u8x8_d_ssd1306_128x64_noname.o
+u8x8_d_sh1106_128x64_noname <= USED 0
+u8x8_d_sh1106_128x64_vcomh0 <= USED 0
+u8x8_d_sh1106_128x64_winstar <= USED 0
+u8x8_d_ssd1306_128x64_alt0 <= USED 0
+u8x8_d_ssd1306_128x64_vcomh0 <= USED 0
+u8x8_d_ssd1312_128x64_noname <= USED 0
+;FILE u8x8_debounce.o
+u8x8_GetMenuEvent <= USED 0
+;FILE u8x8_display.o
+u8x8_ClearDisplay <= USED 0
+u8x8_ClearDisplayWithTile <= USED 0
+u8x8_ClearLine <= USED 0
+u8x8_FillDisplay <= USED 0
+u8x8_InitInterface <= USED 0
+u8x8_SetContrast <= USED 0
+u8x8_SetFlipMode <= USED 0
+;FILE u8x8_gpio.o
+;FILE u8x8_input_value.o
+u8x8_UserInterfaceInputValue <= USED 0
+;FILE u8x8_message.o
+u8x8_UserInterfaceMessage <= USED 0
+u8x8_draw_button_line <= USED 0
+;FILE u8x8_selection_list.o
+u8sl_Next <= USED 0
+u8sl_Prev <= USED 0
+u8x8_DrawSelectionList <= USED 0
+u8x8_UserInterfaceSelectionList <= USED 0
+u8x8_sl_string_line_cb <= USED 0
+;FILE u8x8_setup.o
+u8x8_d_null_cb <= USED 0
+;FILE u8x8_string.o
+u8x8_CopyStringLine <= USED 0
+u8x8_DrawUTF8Line <= USED 0
+u8x8_DrawUTF8Lines <= USED 0
+u8x8_GetStringLineCnt <= USED 0
+u8x8_GetStringLineStart <= USED 0
+;FILE u8x8_u16toa.o
+u8x8_u16toa <= USED 0
+u8x8_u16toap <= USED 0
+u8x8_utoa <= USED 0
+;FILE u8x8_u8toa.o
+u8x8_u8toa <= USED 0
+u8x8_u8toap <= USED 0
+;FILE usart.o

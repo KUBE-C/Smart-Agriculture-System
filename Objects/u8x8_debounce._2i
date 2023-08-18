@@ -1,0 +1,6 @@
+--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I .\Start -I .\Library -I .\User -I .\System -I .\HardWare -I .\HardWare\NET -I .\HardWare\NET\MQTT -I .\HardWare\NET\onenet -I .\HardWare\NET\device -I .\HardWare\NET\cJSON -I .\HardWare\buzzer -I .\HardWare\DHT11 -I .\HardWare\Relay -I .\HardWare\Timer -I .\HardWare\Key -I .\HardWare\AutomaticControl -I .\HardWare\SGP30 -I .\HardWare\U8g2 -I .\HardWare\OLED --no-multibyte-chars
+-I.\RTE\_Target_1
+-ID:\ProgramFiles\Keil5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include
+-ID:\ProgramFiles\Keil5\ARM\CMSIS\Include
+-D__UVISION_VERSION="524" -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER
+-o .\objects\u8x8_debounce.o --omf_browse .\objects\u8x8_debounce.crf --depend .\objects\u8x8_debounce.d --feedback ".\Objects\Project.fed" "HardWare\U8g2\u8x8_debounce.c"
