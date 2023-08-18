@@ -339,7 +339,7 @@
               <MiscControls>--no-multibyte-chars</MiscControls>
               <Define>USE_STDPERIPH_DRIVER</Define>
               <Undefine></Undefine>
-              <IncludePath>.\Start;.\Library;.\User;.\System;.\HardWare;.\HardWare\DHT11;.\HardWare\Timer;.\HardWare\Key</IncludePath>
+              <IncludePath>.\Start;.\Library;.\User;.\System;.\HardWare;.\HardWare\DHT11;.\HardWare\Timer;.\HardWare\Key;.\HardWare\Beep;.\HardWare\Led</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -692,6 +692,11 @@
               <FileName>Led.c</FileName>
               <FileType>1</FileType>
               <FilePath>.\HardWare\LED\Led.c</FilePath>
+            </File>
+            <File>
+              <FileName>Beep.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\HardWare\Beep\Beep.c</FilePath>
             </File>
           </Files>
         </Group>

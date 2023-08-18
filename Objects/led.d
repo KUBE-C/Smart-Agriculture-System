@@ -29,6 +29,5 @@
 .\objects\led.o: .\Library\stm32f10x_usart.h
 .\objects\led.o: .\Library\stm32f10x_wwdg.h
 .\objects\led.o: .\Library\misc.h
-.\objects\led.o: .\System\Delay.h
 .\objects\led.o: D:\VSCode\MDK5\ARM\ARMCC\Bin\..\include\string.h
 .\objects\led.o: D:\VSCode\MDK5\ARM\ARMCC\Bin\..\include\stdio.h
