@@ -1,7 +1,7 @@
 .\objects\main.o: User\main.c
 .\objects\main.o: .\Start\stm32f10x.h
 .\objects\main.o: .\Start\core_cm3.h
-.\objects\main.o: D:\VSCode\MDK5\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\main.o: F:\MDK5.36\ARM\ARMCC\Bin\..\include\stdint.h
 .\objects\main.o: .\Start\system_stm32f10x.h
 .\objects\main.o: .\User\stm32f10x_conf.h
 .\objects\main.o: .\Library\stm32f10x_adc.h
@@ -31,8 +31,8 @@
 .\objects\main.o: .\System\Delay.h
 .\objects\main.o: .\HardWare\Timer\Timer.h
 .\objects\main.o: .\HardWare\Key\key.h
-.\objects\main.o: D:\VSCode\MDK5\ARM\ARMCC\Bin\..\include\stdbool.h
+.\objects\main.o: F:\MDK5.36\ARM\ARMCC\Bin\..\include\stdbool.h
 .\objects\main.o: .\HardWare\usart.h
 .\objects\main.o: .\HardWare\DHT11\DHT11.h
-.\objects\main.o: D:\VSCode\MDK5\ARM\ARMCC\Bin\..\include\string.h
-.\objects\main.o: D:\VSCode\MDK5\ARM\ARMCC\Bin\..\include\stdio.h
+.\objects\main.o: F:\MDK5.36\ARM\ARMCC\Bin\..\include\string.h
+.\objects\main.o: F:\MDK5.36\ARM\ARMCC\Bin\..\include\stdio.h
