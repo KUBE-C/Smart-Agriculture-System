@@ -18,7 +18,7 @@
 int main(void)
 {
     Usart1_Init(115200);
-    UsartPrintf(USART_DEBUG, "Hardware init OK\r\n");
+    UsartPrintf(USART_DEBUG, " Hardware init OK\r\n");
 
 } 
 

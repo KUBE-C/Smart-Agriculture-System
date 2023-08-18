@@ -31,4 +31,3 @@
 .\objects\timer.o: .\Library\misc.h
 .\objects\timer.o: .\HardWare\Key\Key.h
 .\objects\timer.o: D:\VSCode\MDK5\ARM\ARMCC\Bin\..\include\stdbool.h
-.\objects\timer.o: .\HardWare\AutomaticControl\AutoControl.h

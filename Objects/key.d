@@ -32,16 +32,5 @@
 .\objects\key.o: D:\VSCode\MDK5\ARM\ARMCC\Bin\..\include\string.h
 .\objects\key.o: HardWare\Key\Key.h
 .\objects\key.o: D:\VSCode\MDK5\ARM\ARMCC\Bin\..\include\stdbool.h
-.\objects\key.o: .\HardWare\LED.h
 .\objects\key.o: .\HardWare\Timer\Timer.h
 .\objects\key.o: .\HardWare\usart.h
-.\objects\key.o: .\HardWare\buzzer.h
-.\objects\key.o: .\HardWare\Servo.h
-.\objects\key.o: .\HardWare\Relay\relay.h
-.\objects\key.o: .\HardWare\AutomaticControl\AutoControl.h
-.\objects\key.o: .\HardWare\OLED\OLED.h
-.\objects\key.o: .\HardWare\U8g2\u8g2.h
-.\objects\key.o: .\HardWare\U8g2\u8x8.h
-.\objects\key.o: D:\VSCode\MDK5\ARM\ARMCC\Bin\..\include\stdarg.h
-.\objects\key.o: D:\VSCode\MDK5\ARM\ARMCC\Bin\..\include\stddef.h
-.\objects\key.o: D:\VSCode\MDK5\ARM\ARMCC\Bin\..\include\limits.h

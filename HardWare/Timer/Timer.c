@@ -74,7 +74,7 @@ void TIM3_IRQHandler(void)
 		timedAuto[0]++;
 		if(timedAuto[0]> timedAuto[1])
 		{		
-			Control_Execute();
+			//Control_Execute();
 			timedAuto[0] = 0;
 		}
 		TIM_ClearITPendingBit(TIM3,TIM_IT_Update);
