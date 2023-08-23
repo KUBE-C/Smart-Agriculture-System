@@ -30,6 +30,7 @@
 .\objects\usart.o: .\Library\stm32f10x_wwdg.h
 .\objects\usart.o: .\Library\misc.h
 .\objects\usart.o: .\System\Delay.h
+.\objects\usart.o: .\HardWare\Led\Led.h
 .\objects\usart.o: D:\VSCode\MDK5\ARM\ARMCC\Bin\..\include\stdarg.h
 .\objects\usart.o: D:\VSCode\MDK5\ARM\ARMCC\Bin\..\include\string.h
 .\objects\usart.o: D:\VSCode\MDK5\ARM\ARMCC\Bin\..\include\stdio.h

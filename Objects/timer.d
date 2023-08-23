@@ -29,6 +29,5 @@
 .\objects\timer.o: .\Library\stm32f10x_usart.h
 .\objects\timer.o: .\Library\stm32f10x_wwdg.h
 .\objects\timer.o: .\Library\misc.h
-.\objects\timer.o: .\HardWare\Key\Key.h
-.\objects\timer.o: D:\VSCode\MDK5\ARM\ARMCC\Bin\..\include\stdbool.h
+.\objects\timer.o: .\HardWare\AutoControl\AutoControl.h
 .\objects\timer.o: .\HardWare\usart.h

@@ -22,13 +22,13 @@
  
  void LED0_ON(void)
  {
-	 GPIO_SetBits(GPIOB,GPIO_Pin_5); 
+     GPIO_ResetBits(GPIOB,GPIO_Pin_5);
  }
  
 
  void LED0_OFF(void)
  {
-    GPIO_ResetBits(GPIOB,GPIO_Pin_5);
+    GPIO_SetBits(GPIOB,GPIO_Pin_5); 
  }
  
 
@@ -47,12 +47,12 @@
 
  void LED1_ON(void)
  {
-	 GPIO_SetBits(GPIOE,GPIO_Pin_5); 
+     GPIO_ResetBits(GPIOE,GPIO_Pin_5);
  }
  
  void LED1_OFF(void)
  {
-    GPIO_ResetBits(GPIOE,GPIO_Pin_5);
+    GPIO_SetBits(GPIOE,GPIO_Pin_5);
  }
  
   void LED1_Turn(void)

@@ -1,4 +1,5 @@
-.\objects\autocontrol.o: HardWare\AutomaticControl\AutoControl.c
+.\objects\autocontrol.o: HardWare\AutoControl\AutoControl.c
+.\objects\autocontrol.o: HardWare\AutoControl\AutoControl.h
 .\objects\autocontrol.o: .\Start\stm32f10x.h
 .\objects\autocontrol.o: .\Start\core_cm3.h
 .\objects\autocontrol.o: D:\VSCode\MDK5\ARM\ARMCC\Bin\..\include\stdint.h
@@ -28,11 +29,11 @@
 .\objects\autocontrol.o: .\Library\stm32f10x_usart.h
 .\objects\autocontrol.o: .\Library\stm32f10x_wwdg.h
 .\objects\autocontrol.o: .\Library\misc.h
-.\objects\autocontrol.o: HardWare\AutomaticControl\AutoControl.h
-.\objects\autocontrol.o: .\HardWare\LED.h
+.\objects\autocontrol.o: .\HardWare\Stepper\Stepper.h
+.\objects\autocontrol.o: .\HardWare\Led\LED.h
 .\objects\autocontrol.o: .\HardWare\Timer\Timer.h
-.\objects\autocontrol.o: .\HardWare\buzzer.h
-.\objects\autocontrol.o: .\HardWare\Servo.h
-.\objects\autocontrol.o: .\HardWare\Relay\relay.h
-.\objects\autocontrol.o: .\HardWare\SGP30\SGP30.h
-.\objects\autocontrol.o: .\HardWare\SGP30\SGP30i2c.h
+.\objects\autocontrol.o: .\HardWare\usart.h
+.\objects\autocontrol.o: .\System\Delay.h
+.\objects\autocontrol.o: .\HardWare\Lcd\Lcd.h
+.\objects\autocontrol.o: D:\VSCode\MDK5\ARM\ARMCC\Bin\..\include\stdlib.h
+.\objects\autocontrol.o: .\System\sys.h

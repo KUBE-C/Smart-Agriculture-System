@@ -32,7 +32,16 @@
 .\objects\main.o: .\HardWare\Timer\Timer.h
 .\objects\main.o: .\HardWare\Key\key.h
 .\objects\main.o: D:\VSCode\MDK5\ARM\ARMCC\Bin\..\include\stdbool.h
+.\objects\main.o: .\HardWare\Led\Led.h
 .\objects\main.o: .\HardWare\usart.h
 .\objects\main.o: .\HardWare\DHT11\DHT11.h
+.\objects\main.o: .\HardWare\Lsens\Lsens.h
+.\objects\main.o: .\System\sys.h
+.\objects\main.o: .\HardWare\AD\AD.h
+.\objects\main.o: .\HardWare\Lcd\Lcd.h
+.\objects\main.o: D:\VSCode\MDK5\ARM\ARMCC\Bin\..\include\stdlib.h
+.\objects\main.o: .\HardWare\AutoControl\AutoControl.h
+.\objects\main.o: .\HardWare\Stepper\Stepper.h
+.\objects\main.o: .\HardWare\ESP8266\esp8266.h
 .\objects\main.o: D:\VSCode\MDK5\ARM\ARMCC\Bin\..\include\string.h
 .\objects\main.o: D:\VSCode\MDK5\ARM\ARMCC\Bin\..\include\stdio.h

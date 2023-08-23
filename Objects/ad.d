@@ -1,4 +1,4 @@
-.\objects\ad.o: HardWare\AD.c
+.\objects\ad.o: HardWare\AD\AD.c
 .\objects\ad.o: .\Start\stm32f10x.h
 .\objects\ad.o: .\Start\core_cm3.h
 .\objects\ad.o: D:\VSCode\MDK5\ARM\ARMCC\Bin\..\include\stdint.h
@@ -28,3 +28,5 @@
 .\objects\ad.o: .\Library\stm32f10x_usart.h
 .\objects\ad.o: .\Library\stm32f10x_wwdg.h
 .\objects\ad.o: .\Library\misc.h
+.\objects\ad.o: HardWare\AD\AD.h
+.\objects\ad.o: .\System\Delay.h

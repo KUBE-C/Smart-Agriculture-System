@@ -32,3 +32,10 @@
 .\objects\key.o: .\Library\stm32f10x_wwdg.h
 .\objects\key.o: .\Library\misc.h
 .\objects\key.o: .\System\Delay.h
+.\objects\key.o: .\HardWare\Timer\Timer.h
+.\objects\key.o: .\HardWare\Stepper\Stepper.h
+.\objects\key.o: .\HardWare\AutoControl\AutoControl.h
+.\objects\key.o: .\HardWare\usart.h
+.\objects\key.o: .\HardWare\Lcd\Lcd.h
+.\objects\key.o: D:\VSCode\MDK5\ARM\ARMCC\Bin\..\include\stdlib.h
+.\objects\key.o: .\System\sys.h

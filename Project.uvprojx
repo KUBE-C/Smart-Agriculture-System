@@ -339,7 +339,7 @@
               <MiscControls>--no-multibyte-chars</MiscControls>
               <Define>USE_STDPERIPH_DRIVER</Define>
               <Undefine></Undefine>
-              <IncludePath>.\Start;.\Library;.\User;.\System;.\HardWare;.\HardWare\DHT11;.\HardWare\Timer;.\HardWare\Key;.\HardWare\Beep;.\HardWare\Led</IncludePath>
+              <IncludePath>.\Start;.\Library;.\User;.\System;.\HardWare;.\HardWare\DHT11;.\HardWare\Timer;.\HardWare\Key;.\HardWare\Beep;.\HardWare\Led;.\HardWare\AD;.\HardWare\Lcd;.\HardWare\AutoControl;.\HardWare\Server;.\HardWare\Adc;.\HardWare\Lsens;.\HardWare\Stepper;.\HardWare\ESP8266;.\HardWare\NET;.\HardWare\NET\ESP8266;.\HardWare\NET\cJSON</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -654,6 +654,11 @@
           <GroupName>System</GroupName>
           <Files>
             <File>
+              <FileName>sys.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\System\sys.c</FilePath>
+            </File>
+            <File>
               <FileName>Delay.c</FileName>
               <FileType>1</FileType>
               <FilePath>.\System\Delay.c</FilePath>
@@ -697,6 +702,56 @@
               <FileName>Beep.c</FileName>
               <FileType>1</FileType>
               <FilePath>.\HardWare\Beep\Beep.c</FilePath>
+            </File>
+            <File>
+              <FileName>AD.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\HardWare\AD\AD.c</FilePath>
+            </File>
+            <File>
+              <FileName>Lcd.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\HardWare\Lcd\Lcd.c</FilePath>
+            </File>
+            <File>
+              <FileName>AutoControl.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\HardWare\AutoControl\AutoControl.c</FilePath>
+            </File>
+            <File>
+              <FileName>Server.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\HardWare\Server\Server.c</FilePath>
+            </File>
+            <File>
+              <FileName>Adc3.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\HardWare\Adc\Adc3.c</FilePath>
+            </File>
+            <File>
+              <FileName>Lsens.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\HardWare\Lsens\Lsens.c</FilePath>
+            </File>
+            <File>
+              <FileName>Stepper.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\HardWare\Stepper\Stepper.c</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
+          <GroupName>NET</GroupName>
+          <Files>
+            <File>
+              <FileName>esp8266.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\NET\ESP8266\esp8266.c</FilePath>
+            </File>
+            <File>
+              <FileName>cJSON.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\NET\cJSON\cJSON.c</FilePath>
             </File>
           </Files>
         </Group>
