@@ -1,4 +1,4 @@
-.\objects\esp8266.o: NET\ESP8266\esp8266.c
+.\objects\esp8266.o: HardWare\NET\ESP8266\esp8266.c
 .\objects\esp8266.o: .\Start\stm32f10x.h
 .\objects\esp8266.o: .\Start\core_cm3.h
 .\objects\esp8266.o: D:\VSCode\MDK5\ARM\ARMCC\Bin\..\include\stdint.h
@@ -28,7 +28,7 @@
 .\objects\esp8266.o: .\Library\stm32f10x_usart.h
 .\objects\esp8266.o: .\Library\stm32f10x_wwdg.h
 .\objects\esp8266.o: .\Library\misc.h
-.\objects\esp8266.o: NET\ESP8266\esp8266.h
+.\objects\esp8266.o: HardWare\NET\ESP8266\esp8266.h
 .\objects\esp8266.o: .\System\Delay.h
 .\objects\esp8266.o: .\HardWare\usart.h
 .\objects\esp8266.o: D:\VSCode\MDK5\ARM\ARMCC\Bin\..\include\string.h

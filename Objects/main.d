@@ -42,6 +42,13 @@
 .\objects\main.o: D:\VSCode\MDK5\ARM\ARMCC\Bin\..\include\stdlib.h
 .\objects\main.o: .\HardWare\AutoControl\AutoControl.h
 .\objects\main.o: .\HardWare\Stepper\Stepper.h
-.\objects\main.o: .\HardWare\ESP8266\esp8266.h
+.\objects\main.o: .\HardWare\NET\Data\Data.h
+.\objects\main.o: .\HardWare\Stmflash\Stmflash.h
+.\objects\main.o: .\HardWare\RTC\Rtc.h
+.\objects\main.o: .\HardWare\Sr501\Sr501.h
+.\objects\main.o: .\HardWare\Norflash\Norflash.h
+.\objects\main.o: .\HardWare\DS18B20\DS18B20.h
+.\objects\main.o: .\HardWare\RC522\Rc522.h
+.\objects\main.o: .\HardWare\NET\ESP8266\esp8266.h
 .\objects\main.o: D:\VSCode\MDK5\ARM\ARMCC\Bin\..\include\string.h
 .\objects\main.o: D:\VSCode\MDK5\ARM\ARMCC\Bin\..\include\stdio.h

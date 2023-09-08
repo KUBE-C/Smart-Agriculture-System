@@ -28,5 +28,3 @@
 .\objects\ad.o: .\Library\stm32f10x_usart.h
 .\objects\ad.o: .\Library\stm32f10x_wwdg.h
 .\objects\ad.o: .\Library\misc.h
-.\objects\ad.o: HardWare\AD\AD.h
-.\objects\ad.o: .\System\Delay.h

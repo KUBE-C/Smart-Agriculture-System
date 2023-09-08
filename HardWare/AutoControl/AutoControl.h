@@ -6,9 +6,14 @@
 
 extern uint8_t AutoControl_mode;
 
+// 定义 Flash 存储的起始地址
+#define FLASH_SAVE_ADDR 0X08070000  // 设置FLASH保存地址(必须为偶数，且其值要大于本代码所占用FLASH的大小+0X08000000) 
+extern char values[256];
+#define SIZE sizeof(values)
+extern uint8_t datatemp[SIZE];
+
 struct TEM_Struct
 {
-	uint16_t TEM_free;//报警计时
 	uint32_t  TEM_value;
 	uint32_t TEM_FirstMaxValue;//阈值1
     uint32_t TEM_SecondMaxValue;//阈值2
@@ -18,7 +23,6 @@ struct TEM_Struct
 
 struct ENV_Struct
 {
-    uint16_t ENV_free;//报警计时
 	uint32_t  ENV_value;
 	uint32_t ENV_MaxValue;//最大阈值
 	uint16_t ENV_MiniValue;//最小阈值
@@ -27,7 +31,7 @@ struct ENV_Struct
 extern struct TEM_Struct tempControl;//温度控制结构体
 extern struct ENV_Struct lightControl;//温度控制结构体
 
-
+void value_change(uint32_t tem1, uint32_t tem2, uint32_t light);
 
 void Control_Init(void);
 void Control_Execute(void);

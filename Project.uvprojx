@@ -339,7 +339,7 @@
               <MiscControls>--no-multibyte-chars</MiscControls>
               <Define>USE_STDPERIPH_DRIVER</Define>
               <Undefine></Undefine>
-              <IncludePath>.\Start;.\Library;.\User;.\System;.\HardWare;.\HardWare\DHT11;.\HardWare\Timer;.\HardWare\Key;.\HardWare\Beep;.\HardWare\Led;.\HardWare\AD;.\HardWare\Lcd;.\HardWare\AutoControl;.\HardWare\Server;.\HardWare\Adc;.\HardWare\Lsens;.\HardWare\Stepper;.\HardWare\ESP8266;.\HardWare\NET;.\HardWare\NET\ESP8266;.\HardWare\NET\cJSON</IncludePath>
+              <IncludePath>.\Start;.\Library;.\User;.\System;.\HardWare;.\HardWare\DHT11;.\HardWare\Timer;.\HardWare\Key;.\HardWare\Beep;.\HardWare\Led;.\HardWare\AD;.\HardWare\Lcd;.\HardWare\AutoControl;.\HardWare\Server;.\HardWare\Adc;.\HardWare\Lsens;.\HardWare\Stepper;.\HardWare\Stmflash;.\HardWare\Sr501;.\HardWare\RTC;.\HardWare\Spi;.\HardWare\Norflash;.\HardWare\DS18B20;.\HardWare\RC522;.\HardWare\Relay;.\HardWare\NET;.\HardWare\NET\ESP8266;.\HardWare\NET\cJSON;.\HardWare\NET\Data</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -738,20 +738,65 @@
               <FileType>1</FileType>
               <FilePath>.\HardWare\Stepper\Stepper.c</FilePath>
             </File>
+            <File>
+              <FileName>Stmflash.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\HardWare\Stmflash\Stmflash.c</FilePath>
+            </File>
+            <File>
+              <FileName>Rtc.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\HardWare\RTC\Rtc.c</FilePath>
+            </File>
+            <File>
+              <FileName>Sr501.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\HardWare\Sr501\Sr501.c</FilePath>
+            </File>
+            <File>
+              <FileName>Spi.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\HardWare\Spi\Spi.c</FilePath>
+            </File>
+            <File>
+              <FileName>Norflash.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\HardWare\Norflash\Norflash.c</FilePath>
+            </File>
+            <File>
+              <FileName>DS18B20.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\HardWare\DS18B20\DS18B20.c</FilePath>
+            </File>
+            <File>
+              <FileName>Rc522.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\HardWare\RC522\Rc522.c</FilePath>
+            </File>
+            <File>
+              <FileName>Relay.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\HardWare\Relay\Relay.c</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>
           <GroupName>NET</GroupName>
           <Files>
             <File>
-              <FileName>esp8266.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>.\NET\ESP8266\esp8266.c</FilePath>
-            </File>
-            <File>
               <FileName>cJSON.c</FileName>
               <FileType>1</FileType>
-              <FilePath>.\NET\cJSON\cJSON.c</FilePath>
+              <FilePath>.\HardWare\NET\cJSON\cJSON.c</FilePath>
+            </File>
+            <File>
+              <FileName>Data.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\HardWare\NET\Data\Data.c</FilePath>
+            </File>
+            <File>
+              <FileName>esp8266.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\HardWare\NET\ESP8266\esp8266.c</FilePath>
             </File>
           </Files>
         </Group>

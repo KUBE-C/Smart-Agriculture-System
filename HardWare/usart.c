@@ -120,6 +120,16 @@ void Usart2_Init(unsigned int baud)
 
 }
 
+void USART2_IRQHandler(void)
+{
+
+	if(USART_GetITStatus(USART2, USART_IT_RXNE) != RESET) //接收中断
+	{
+		USART_ClearFlag(USART2, USART_FLAG_RXNE);
+	}
+
+}
+
 /*
 ************************************************************
 *	函数名称：	Usart_SendString

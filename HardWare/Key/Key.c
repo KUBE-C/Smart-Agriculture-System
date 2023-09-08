@@ -6,6 +6,7 @@
 #include "AutoControl.h"
 #include "usart.h"
 #include "Lcd.h"
+#include "Stmflash.h"
 
 
 
@@ -29,6 +30,7 @@ void Key_Init(void)
 
 void Key_Execute(uint8_t key)
 {
+
     switch(key)
     {
         case KEYUP_PRES:
@@ -38,11 +40,17 @@ void Key_Execute(uint8_t key)
             break;
         
         case KEY1_PRES:
-            Stepper_RotateByLoop(Forward,5000, 2);
-            break;
+            //Stepper_RotateByLoop(Forward,5000, 2);
+         UsartPrintf(USART_DEBUG, " Start Write FLASH....\r\n");
+        //STMFLASH_Write(FLASH_SAVE_ADDR,(u16*)TEXT_Buffer,SIZE);
+        value_change(tempControl.TEM_FirstMaxValue, tempControl.TEM_SecondMaxValue, lightControl.ENV_MaxValue);
+        UsartPrintf(USART_DEBUG, " FLASH Write Finished!\r\n");            /* 提示传送完成 */
         
         case KEY0_PRES:
-            Stepper_RotateByLoop(Reversal,5000, 2);
+            UsartPrintf(USART_DEBUG, " Start Read FLASH....\r\n");
+           STMFLASH_Read(FLASH_SAVE_ADDR,(u16*)datatemp,SIZE);
+           UsartPrintf(USART_DEBUG, " The Data Readed Is:%s\r\n",datatemp);  /* 提示传送完成 */
+            //Stepper_RotateByLoop(Reversal,5000, 2);
             break;
         default:
             break;

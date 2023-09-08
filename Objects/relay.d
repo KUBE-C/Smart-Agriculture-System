@@ -1,4 +1,4 @@
-.\objects\relay.o: HardWare\Relay\relay.c
+.\objects\relay.o: HardWare\Relay\Relay.c
 .\objects\relay.o: .\Start\stm32f10x.h
 .\objects\relay.o: .\Start\core_cm3.h
 .\objects\relay.o: D:\VSCode\MDK5\ARM\ARMCC\Bin\..\include\stdint.h
@@ -28,4 +28,4 @@
 .\objects\relay.o: .\Library\stm32f10x_usart.h
 .\objects\relay.o: .\Library\stm32f10x_wwdg.h
 .\objects\relay.o: .\Library\misc.h
-.\objects\relay.o: HardWare\Relay\relay.h
+.\objects\relay.o: HardWare\Relay\Relay.h

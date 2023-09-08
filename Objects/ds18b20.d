@@ -1,7 +1,8 @@
-.\objects\ds18b20.o: HardWare\DS18B20.c
+.\objects\ds18b20.o: HardWare\DS18B20\DS18B20.c
+.\objects\ds18b20.o: .\System\Delay.h
 .\objects\ds18b20.o: .\Start\stm32f10x.h
 .\objects\ds18b20.o: .\Start\core_cm3.h
-.\objects\ds18b20.o: D:\ProgramFiles\Keil5\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\ds18b20.o: D:\VSCode\MDK5\ARM\ARMCC\Bin\..\include\stdint.h
 .\objects\ds18b20.o: .\Start\system_stm32f10x.h
 .\objects\ds18b20.o: .\User\stm32f10x_conf.h
 .\objects\ds18b20.o: .\Library\stm32f10x_adc.h
@@ -28,5 +29,4 @@
 .\objects\ds18b20.o: .\Library\stm32f10x_usart.h
 .\objects\ds18b20.o: .\Library\stm32f10x_wwdg.h
 .\objects\ds18b20.o: .\Library\misc.h
-.\objects\ds18b20.o: .\System\Delay.h
-.\objects\ds18b20.o: HardWare\DS18B20.h
+.\objects\ds18b20.o: HardWare\DS18B20\DS18B20.h

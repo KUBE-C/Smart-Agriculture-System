@@ -39,3 +39,4 @@
 .\objects\key.o: .\HardWare\Lcd\Lcd.h
 .\objects\key.o: D:\VSCode\MDK5\ARM\ARMCC\Bin\..\include\stdlib.h
 .\objects\key.o: .\System\sys.h
+.\objects\key.o: .\HardWare\Stmflash\Stmflash.h

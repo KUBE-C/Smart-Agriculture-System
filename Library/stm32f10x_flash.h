@@ -365,36 +365,36 @@ typedef enum
   */
 
 /*------------ Functions used for all STM32F10x devices -----*/
-void FLASH_SetLatency(uint32_t FLASH_Latency);
-void FLASH_HalfCycleAccessCmd(uint32_t FLASH_HalfCycleAccess);
-void FLASH_PrefetchBufferCmd(uint32_t FLASH_PrefetchBuffer);
-void FLASH_Unlock(void);
-void FLASH_Lock(void);
-FLASH_Status FLASH_ErasePage(uint32_t Page_Address);
-FLASH_Status FLASH_EraseAllPages(void);
-FLASH_Status FLASH_EraseOptionBytes(void);
-FLASH_Status FLASH_ProgramWord(uint32_t Address, uint32_t Data);
-FLASH_Status FLASH_ProgramHalfWord(uint32_t Address, uint16_t Data);
-FLASH_Status FLASH_ProgramOptionByteData(uint32_t Address, uint8_t Data);
-FLASH_Status FLASH_EnableWriteProtection(uint32_t FLASH_Pages);
-FLASH_Status FLASH_ReadOutProtection(FunctionalState NewState);
-FLASH_Status FLASH_UserOptionByteConfig(uint16_t OB_IWDG, uint16_t OB_STOP, uint16_t OB_STDBY);
-uint32_t FLASH_GetUserOptionByte(void);
-uint32_t FLASH_GetWriteProtectionOptionByte(void);
-FlagStatus FLASH_GetReadOutProtectionStatus(void);
-FlagStatus FLASH_GetPrefetchBufferStatus(void);
-void FLASH_ITConfig(uint32_t FLASH_IT, FunctionalState NewState);
-FlagStatus FLASH_GetFlagStatus(uint32_t FLASH_FLAG);
-void FLASH_ClearFlag(uint32_t FLASH_FLAG);
-FLASH_Status FLASH_GetStatus(void);
-FLASH_Status FLASH_WaitForLastOperation(uint32_t Timeout);
+void FLASH_SetLatency(uint32_t FLASH_Latency); // 设置闪存访问延迟
+void FLASH_HalfCycleAccessCmd(uint32_t FLASH_HalfCycleAccess); // 配置闪存访问的半周期访问模式
+void FLASH_PrefetchBufferCmd(uint32_t FLASH_PrefetchBuffer);  // 使能或禁用闪存预取缓冲区
+void FLASH_Unlock(void); // 解锁闪存
+void FLASH_Lock(void);   // 锁定闪存
+FLASH_Status FLASH_ErasePage(uint32_t Page_Address);// 擦除指定页的闪存数据
+FLASH_Status FLASH_EraseAllPages(void);   // 擦除全部闪存页的数据
+FLASH_Status FLASH_EraseOptionBytes(void);// 擦除选项字节区的数据
+FLASH_Status FLASH_ProgramWord(uint32_t Address, uint32_t Data); // 对指定地址的闪存编程一个字（32位）的数据
+FLASH_Status FLASH_ProgramHalfWord(uint32_t Address, uint16_t Data);// 对指定地址的闪存编程一个半字（16位）的数据
+FLASH_Status FLASH_ProgramOptionByteData(uint32_t Address, uint8_t Data);// 对指定地址的选项字节编程一个字节的数据
+FLASH_Status FLASH_EnableWriteProtection(uint32_t FLASH_Pages);// 使能指定页的写保护功能
+FLASH_Status FLASH_ReadOutProtection(FunctionalState NewState);// 使能或禁用闪存的读出保护功能
+FLASH_Status FLASH_UserOptionByteConfig(uint16_t OB_IWDG, uint16_t OB_STOP, uint16_t OB_STDBY);// 配置用户选项字节
+uint32_t FLASH_GetUserOptionByte(void); // 获取用户选项字节的值
+uint32_t FLASH_GetWriteProtectionOptionByte(void); // 获取写保护选项字节的值
+FlagStatus FLASH_GetReadOutProtectionStatus(void); // 获取闪存读出保护状态
+FlagStatus FLASH_GetPrefetchBufferStatus(void); // 获取闪存预取缓冲区的状态
+void FLASH_ITConfig(uint32_t FLASH_IT, FunctionalState NewState); // 配置闪存的中断功能
+FlagStatus FLASH_GetFlagStatus(uint32_t FLASH_FLAG); // 获取指定闪存标志位的状态
+void FLASH_ClearFlag(uint32_t FLASH_FLAG); // 清除指定闪存标志位的状态
+FLASH_Status FLASH_GetStatus(void); // 获取闪存操作的状态
+FLASH_Status FLASH_WaitForLastOperation(uint32_t Timeout); // 等待上一次闪存操作完成
 
 /*------------ New function used for all STM32F10x devices -----*/
-void FLASH_UnlockBank1(void);
-void FLASH_LockBank1(void);
-FLASH_Status FLASH_EraseAllBank1Pages(void);
-FLASH_Status FLASH_GetBank1Status(void);
-FLASH_Status FLASH_WaitForLastBank1Operation(uint32_t Timeout);
+void FLASH_UnlockBank1(void); // 解锁 Bank1 区域的闪存
+void FLASH_LockBank1(void);   // 锁定 Bank1 区域的闪存
+FLASH_Status FLASH_EraseAllBank1Pages(void);// 擦除 Bank1 区域中的全部闪存页的数据
+FLASH_Status FLASH_GetBank1Status(void);  // 获取 Bank1 区域的闪存操作状态
+FLASH_Status FLASH_WaitForLastBank1Operation(uint32_t Timeout); // 等待 Bank1 区域上一次闪存操作完成
 
 #ifdef STM32F10X_XL
 /*---- New Functions used only with STM32F10x_XL density devices -----*/

@@ -15,11 +15,11 @@ void adc3_init(void)
 	ADC_DeInit(ADC3);  //复位ADC3,将外设 ADC3的全部寄存器重设为缺省值
 	
 	ADC_InitStructure.ADC_Mode = ADC_Mode_Independent;	//ADC工作模式: 独立模式
-	ADC_InitStructure.ADC_ScanConvMode = DISABLE;	//模数转换工作在单通道模式
-	ADC_InitStructure.ADC_ContinuousConvMode = DISABLE;	//模数转换工作在单次转换模式
+	ADC_InitStructure.ADC_ScanConvMode = DISABLE;	//非扫描转换模式
+	ADC_InitStructure.ADC_ContinuousConvMode = DISABLE;	//单次转换模式
 	ADC_InitStructure.ADC_ExternalTrigConv = ADC_ExternalTrigConv_None;	//转换由软件而不是外部触发启动
 	ADC_InitStructure.ADC_DataAlign = ADC_DataAlign_Right;	//ADC数据右对齐
-	ADC_InitStructure.ADC_NbrOfChannel = 1;	//顺序进行规则转换的ADC通道的数目
+	ADC_InitStructure.ADC_NbrOfChannel = 1;	//顺序进行规则转换的ADC通道的数目，在扫描模式下有效
 	ADC_Init(ADC3, &ADC_InitStructure);	//根据ADC_InitStruct中指定的参数初始化外设ADCx的寄存器  
 	
 	ADC_Cmd(ADC3, ENABLE);	//使能指定的ADC3

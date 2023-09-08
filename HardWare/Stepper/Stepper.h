@@ -9,8 +9,8 @@ typedef enum
 	Reversal = 1
 } RotDirection;
 
-#define		Stepper_CLK				RCC_APB2Periph_GPIOA
-#define		Stepper_Output_GPIO		GPIOA
+#define		Stepper_CLK				 RCC_APB2Periph_GPIOC
+#define		Stepper_Output_GPIO		GPIOC
 #define 	Stepper_LA				GPIO_Pin_0
 #define 	Stepper_LB				GPIO_Pin_1
 #define 	Stepper_LC				GPIO_Pin_2

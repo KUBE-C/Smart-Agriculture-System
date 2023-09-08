@@ -8,8 +8,10 @@ extern u32 timeDht11[2];
 extern u32 timed001[2];
 extern u32 timedKey[2];
 extern u32 timed8266[2];
+extern u32 timeflash[2];
 extern u32 timedSuB8266[2];
 extern u32 timedAuto[2];
+
 
 void TIM2_Int_Init(void);
 void TIM4_Int_Init(void);

@@ -12,17 +12,10 @@
 #include <string.h>
 #include <stdio.h>
 
-#define ESP8266_WIFI_INFO		"AT+CWJAP=\"TP-LINK_4B5DA4\",\"\"\r\n"
-//#define ESP8266_WIFI_INFO		"AT+CWJAP=\"wind\",\"12345678\"\r\n"
-
-#define ESP8266_TCP1_INFO		"AT+CIPSTART=\"TCP\",\"10.101.129.100\",8800\r\n"
-
-#define ESP8266_TCP2_INFO		"AT+CIPSTART=\"TCP\",\"192.168.103.31\",8082\r\n"
-
-#define ESP8266_TCP3_INFO		"AT+CIPSTART=\"TCP\",\"10.101.129.103\",1234\r\n"
 
 unsigned char esp8266_buf[256];
 unsigned short esp8266_cnt = 0, esp8266_cntPre = 0;
+uint16_t lenSize;
 
 
 extern u8 humidityH;	  //湿度整数部分
@@ -150,10 +143,10 @@ void ESP8266_SendData(unsigned char *data, unsigned short len)
 //
 //	返回参数：	平台返回的原始数据
 //
-//	说明：		不同网络设备返回的格式不同，需要去调试
+//	说明：
 //				如ESP8266的返回格式为	"+IPD,x:yyy"	x代表数据长度，yyy是数据内容
 //==========================================================
-unsigned char *ESP8266_GetIPD(unsigned short timeOut)
+unsigned char *ESP8266_GetIPD(unsigned short timeOut, char *len)
 {
 
 	char *ptrIPD = NULL;
@@ -162,27 +155,33 @@ unsigned char *ESP8266_GetIPD(unsigned short timeOut)
 	{
 		if(ESP8266_WaitRecive() == REV_OK)								//如果接收完成
 		{
-            UsartPrintf(USART_DEBUG,(char *)esp8266_buf);
+            //UsartPrintf(USART_DEBUG,(char *)esp8266_buf); // +IPD,21:{"Tem_maxvalue":"27"}
 			ptrIPD = strstr((char *)esp8266_buf, "IPD,");				//搜索“IPD”头
-			if(ptrIPD == NULL)											//如果没找到，可能是IPD头的延迟，还是需要等待一会，但不会超过设定的时间
+            if(ptrIPD == NULL)											//如果没找到，可能是IPD头的延迟，还是需要等待一会，但不会超过设定的时间
 			{
-				//UsartPrintf(USART_DEBUG, "\"IPD\" not found\r\n");
+
 			}
 			else
 			{
-                //UsartPrintf(USART_DEBUG, "\"IPD\" found\r\n");
-				ptrIPD = strchr(ptrIPD, ':');							//找到':'
-				if(ptrIPD != NULL)
-				{
-					ptrIPD++;
-                    //UsartPrintf(USART_DEBUG, "printf\r\n");
-					return (unsigned char *)(ptrIPD);
-				}
-				else
+                char *p = strstr((char *)esp8266_buf, ",");
+                if(p!=NULL)
                 {
-                    //UsartPrintf(USART_DEBUG," null");
-					return NULL;
-				}
+                    ptrIPD = strchr(ptrIPD, ':');							//找到':'
+                    //UsartPrintf(USART_DEBUG,(char *)ptrIPD); // :....
+                    if(ptrIPD != NULL)
+                    {
+                          lenSize = ptrIPD - p - 1;  // 计算逗号和冒号之间的字符长度
+                        strncpy(len, p + 1, lenSize);  // 复制逗号和冒号之间的数据到len变量
+                        len[lenSize] = '\0';  // 添加字符串结束符
+                        ptrIPD++;
+                        return (unsigned char *)(ptrIPD);
+                    }
+                    else
+                    {
+                        return NULL;
+                    }
+                }
+				
 			}
 		}
 		
@@ -248,18 +247,18 @@ void ESP8266_Init(void)
 	while(ESP8266_SendCmd(ESP8266_WIFI_INFO, "OK"))
 		Delay_ms(500);
 	
-//    UsartPrintf(USART_DEBUG, " 5. CIPSTART\r\n");
-//	while(ESP8266_SendCmd(ESP8266_TCP1_INFO, "OK"))
-//		Delay_ms(500);
-//    UsartPrintf(USART_DEBUG, " TCP CONNECT\r\n");
+    UsartPrintf(USART_DEBUG, " 5. CIPSTART\r\n");
+	while(ESP8266_SendCmd(ESP8266_TCP1_INFO, "OK"))
+		Delay_ms(500);
+    UsartPrintf(USART_DEBUG, " TCP CONNECT\r\n");
 	
 //			UsartPrintf(USART_DEBUG, " 5. CIPSTART\r\n");
 //	while(ESP8266_SendCmd(ESP8266_TCP2_INFO, "OK"))
 //		Delay_ms(500);
-//				
-	UsartPrintf(USART_DEBUG, " 5. CIPSTART\r\n");
-	while(ESP8266_SendCmd(ESP8266_TCP3_INFO, "OK"))
-		Delay_ms(500);
+				
+//	UsartPrintf(USART_DEBUG, " 5. CIPSTART\r\n");
+//	while(ESP8266_SendCmd(ESP8266_TCP3_INFO, "OK"))
+//		Delay_ms(500);
 
 	UsartPrintf(USART_DEBUG, " 6. CIPMODE\r\n");
 	while(ESP8266_SendCmd("AT+CIPMODE=0\r\n", "OK"))

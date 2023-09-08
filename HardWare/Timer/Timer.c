@@ -6,7 +6,8 @@
 u32 timedAD[2] = {0,500};
 u32 timeDht11[2] = {0,500};
 u32 timedKey[2] = {0,10};
-u32 timed8266[2] = {0,1000};
+u32 timed8266[2] = {0,2000};
+u32 timeflash[2] = {0,1500};
 u32 timedSuB8266[2] = {0,10000};
 u32 timedAuto[2] = {0,10};
 unsigned short timeCount;
@@ -115,6 +116,7 @@ void TIM4_IRQHandler(void)   //TIM4中断
         timedAD[0]++;
 		timeDht11[0]++;
 		timed8266[0]++;
+        timeflash[0]++;
 		timeCount ++;
 		timedSuB8266[0]++;
 		timedAuto[0]++;

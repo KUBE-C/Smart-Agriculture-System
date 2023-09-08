@@ -37,3 +37,5 @@
 .\objects\autocontrol.o: .\HardWare\Lcd\Lcd.h
 .\objects\autocontrol.o: D:\VSCode\MDK5\ARM\ARMCC\Bin\..\include\stdlib.h
 .\objects\autocontrol.o: .\System\sys.h
+.\objects\autocontrol.o: .\HardWare\Stmflash\Stmflash.h
+.\objects\autocontrol.o: D:\VSCode\MDK5\ARM\ARMCC\Bin\..\include\stdio.h
