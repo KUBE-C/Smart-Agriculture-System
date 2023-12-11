@@ -4,6 +4,7 @@
 #include "stm32f10x.h"
 
 void Sr501_Init(void);
+void have_people(void);
 
 #define Sr501     GPIO_ReadInputDataBit(GPIOB, GPIO_Pin_4)
 

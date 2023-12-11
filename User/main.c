@@ -58,7 +58,7 @@ int main(void)
     uart3_init(115200);
     //Usart2_Init(9600);
     RTC_Init();
-    //Sr501_Init();//人体红外感应
+    Sr501_Init();//人体红外感应
     Norflash_Init();
     //RC522_Init(); // RFID
     ESP8266_Init();					//初始化ESP8266
@@ -98,7 +98,7 @@ int main(void)
 
     while(1)
     {
-
+        
         //按键 手动
         key = Key_GetNum();
         Key_Execute(key);

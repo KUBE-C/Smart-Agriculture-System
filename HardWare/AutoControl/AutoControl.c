@@ -109,7 +109,6 @@ void Control_Execute(void)
     //				relay1_ON();//打开风扇
     //				Beep_ON();//蜂鸣器
                 tempControl.TEM_Status=0;//不正常
-                UsartPrintf(USART_DEBUG, " First word");
                 LED1_ON();
 
                 
@@ -117,7 +116,6 @@ void Control_Execute(void)
             else if(tempControl.TEM_value > tempControl.TEM_SecondMaxValue)
             {
                 tempControl.TEM_Status=0;//不正常
-                UsartPrintf(USART_DEBUG, " Second word");
                 LED1_Turn();
 
             }
